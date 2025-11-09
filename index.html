@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OnTech IT</title>
+
+  <!-- Favicon -->
+   <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font (e.g., Inter for a professional look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-900 bg-surface">
+
+  <!-- NAVBAR (Enhanced Craft.do Style) -->
+<header id="nav" class="fixed top-0 w-full z-50 transition-all">
+  <div class="nav-inner container mx-auto flex items-center justify-between px-6 py-3 backdrop-blur-md bg-white/60 rounded-b-xl shadow-sm transition-all">
+    <!-- Brand -->
+    <div class="flex items-center gap-4">
+      <a href="https://www.facebook.com/ontechitbd" target="_blank"><img src="image/Logo.png" alt="logo" class="w-20 h-20 rounded-md object-cover"></a>
+      <!-- <span class="font-bold text-blue-700 text-xl tracking-wide">OnTech <span class="text-orange-600">IT</span> -->
+    </span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="nav-link text-gray-700 font-medium hover:text-blue-600 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all" href="#home">Home</a>
+      <a class="nav-link text-gray-700 font-medium hover:text-blue-600 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all" href="#team">Team</a>
+      <a class="nav-link text-gray-700 font-medium hover:text-blue-600 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all" href="#services">Services</a>
+      <a class="nav-link text-gray-700 font-medium hover:text-blue-600 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all" href="#courses">Courses</a>
+      <a class="nav-link text-gray-700 font-medium hover:text-blue-600 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 hover:after:w-full after:transition-all" href="#contact">Contact</a>
+    </nav>
+
+    <!-- CTA + Menu -->
+    <div class="flex items-center gap-4">
+      <a href="#contact" class="hidden md:inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:-translate-y-0.5">Start Project / Course</a>
+      <button id="menuBtn" class="md:hidden text-blue-700 text-3xl font-light focus:outline-none transition-transform duration-300 z-50">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed top-0 left-0 w-full h-screen bg-blue-700 text-white flex flex-col items-center justify-center gap-8 text-2xl font-semibold transform -translate-y-full transition-all duration-500 ease-in-out">
+    <a href="#home" class="mobile-link text-white hover:text-blue-200">Home</a>
+    <a href="#team" class="mobile-link text-white hover:text-blue-200">Team</a>
+    <a href="#services" class="mobile-link text-white hover:text-blue-200">Services</a>
+    <a href="#courses" class="mobile-link text-white hover:text-blue-200">Courses</a>
+    <a href="#contact" class="mobile-link text-white hover:text-blue-200">Contact</a>
+  </div>
+</header>
+
+  <main class="pt-24">
+
+    <!-- HERO -->
+    <section id="home" class="min-h-[80vh] container mx-auto px-6 flex flex-col md:flex-row items-center gap-12 pt-16 pb-12 ">
+
+      <!-- Left: typing -->
+
+      <div class="w-full md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-snug">We give modern & <span class="text-blue-600">digital services</span><br> for growing businesses</h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-xl">OnTech IT helps teams & founders ship faster — through web products, training and growth-focused IT services.</p>
+
+        <div class="mt-6 flex items-center gap-3 text-xl text-blue-700 font-semibold">
+          <span id="v1-typed" class="typed"></span>
+          <span class="blink">|</span>
+        </div>
+
+        <div class="mt-8 flex gap-4">
+          <a href="#courses" class="px-6 py-2 bg-blue-600 text-white font-bold rounded-lg shadow-xl shadow-blue-500/30 hover:bg-blue-700 transition transform hover:-translate-y-1">Explore Courses →</a>
+          <a href="#services" class="px-6 py-2 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition transform hover:-translate-y-1">View Services</a>
+        </div>
+      </div>
+
+      <!-- Right: circular hero image -->
+
+      <div class="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+        <div class="rounded-full overflow-hidden shadow-2xl shadow-blue-500/40 w-72 h-72 ring-8 ring-white/80 bg-white-500 hover:bg-blue-400 focus:outline-2 focus:outline-offset-2 focus:outline-blue-300 active:bg-blue-500 ..."">
+          <img src="image/Ontech_it.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x400/93c5fd/ffffff?text=OnTech+IT'" alt="OnTech IT " class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+    
+    <!-- TEAM SECTION (Scrollable + Click Focus) -->
+
+    <section id="team" class="py-24 initial-hidden bg-white/70">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-4 md:mb-0">Meet Our Exceptional Team</h2>
+          <!-- Scroll buttons added -->
+          <div class="flex gap-2 items-center">
+            <button class="v1-arrow prev" data-target="team-row" aria-label="Previous Team Member">‹</button>
+            <button class="v1-arrow next" data-target="team-row" aria-label="Next Team Member">›</button>
+          </div>
+        </div>
+        
+        <!-- Converted to cards-row for horizontal scrolling and team-member cards for the focus effect -->
+
+        <div id="team-row" class="cards-row flex gap-6 overflow-x-scroll snap-x snap-mandatory pb-4">
+          
+          <!-- Team Member 1 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="image/CEO.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=T.K.'" alt="CEO Name" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Kamrul Khan</h3>
+            <p class="text-blue-600 font-semibold mb-2">CEO & Founder</p>
+            <p class="text-gray-600 text-sm">Visionary leader specializing in strategic digital transformation.</p>
+          </article>
+
+          
+          <!-- Team Member 2  -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="###" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=S.M.'" alt="Project Manager" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Shaker Mahmud</h3>
+            <p class="text-blue-600 font-semibold mb-2">Senior Project Manager</p>
+            <p class="text-gray-600 text-sm">Ensures timely delivery and scope management for all client work.</p>
+          </article>
+          
+          <!-- Team Member 3 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="https://images.unsplash.com/photo-1544725176-7c4063f10118?q=80&w=300&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=S.B.'" alt="Lead Developer" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Sarah B.</h3>
+            <p class="text-blue-600 font-semibold mb-2">Lead Full-Stack Developer</p>
+            <p class="text-gray-600 text-sm">Expert in React, Node.js, and scalable cloud architecture.</p>
+          </article>
+
+          <!-- Team Member 4 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="###" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=N.K.'" alt="Lead Developer" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Nahiyan Khan</h3>
+            <p class="text-blue-600 font-semibold mb-2">Front-End Developer</p>
+            <p class="text-gray-600 text-sm">Expert in Html, CSS/Tailwind css, and Javascript.</p>
+          </article>
+          
+          
+          <!-- Team Member 5 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="image/team/TM-4.jpg" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=J.K.'" alt="Marketing Manager" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Mac Noyon</h3>
+            <p class="text-blue-600 font-semibold mb-2">Digital Marketing Director</p>
+            <p class="text-gray-600 text-sm">Drives ROI through data-focused SEO and conversion strategies.</p>
+          </article>
+          
+          <!-- Team Member 6 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="image/team/TM-3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=M.C.'" alt="Design Lead" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Joy Dev</h3>
+            <p class="text-blue-600 font-semibold mb-2">UI/UX Designer</p>
+            <p class="text-gray-600 text-sm">Creates intuitive, beautiful user interfaces that enhance engagement.</p>
+          </article>
+
+
+          <!-- Team Member 7 -->
+          <article class="team-member card bg-white rounded-2xl p-6 text-center shadow-lg border border-gray-100 transition-all hover:shadow-xl hover:border-blue-400/50 hover:scale-[1.02]">
+            <img src="image/team/TM-2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/300x300/93c5fd/ffffff?text=R.L.'" alt="IT Consultant" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-blue-100">
+            <h3 class="text-xl font-bold text-blue-800">Abid Khan</h3>
+            <p class="text-blue-600 font-semibold mb-2">Graphic Designer</p>
+            <p class="text-gray-600 text-sm">Specializes in graphic design, logo design and Photo editing etc.</p>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SERVICES SECTION (Old Courses Content) -->
+
+    <section id="services" class="py-24 initial-hidden">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-4 md:mb-0">IT & Digital Services</h2>
+          <div class="flex gap-2 items-center">
+            <button class="v1-arrow prev" data-target="services-row" aria-label="Previous Service">‹</button>
+            <button class="v1-arrow next" data-target="services-row" aria-label="Next Service">›</button>
+          </div>
+        </div>
+
+        <div id="services-row" class="cards-row flex gap-6 overflow-x-scroll snap-x snap-mandatory pb-4">
+
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/web degine (5).jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Web+Dev'" alt="Web Development" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">Web Development</h3>
+            <p class="text-gray-600 text-sm mt-2">Crafting high-performance, secure, and fully responsive websites and web applications using modern stacks like React, Vue, and Laravel.</p>
+          </article>
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/Software development.jpg" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">Software Development</h3>
+            <p class="text-gray-600 text-sm mt-2">Building bespoke, scalable, and reliable software solutions, from enterprise systems to custom mobile apps.</p>
+          </article>
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/UI-Ux.jfif" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=UI%2FUX'" alt="Graphic Design" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">Professional UI/UX Design</h3>
+            <p class="text-gray-600 text-sm mt-2">Focusing on user-centric design principles to create interfaces that are beautiful, intuitive, and highly accessible.</p>
+          </article>
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/digital merketing.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Marketing'" alt="Digital Marketing" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">Advanced Digital Marketing</h3>
+            <p class="text-gray-600 text-sm mt-2">Comprehensive strategies for SEO, PPC, and social media to drive traffic and maximize conversion.</p>
+          </article>
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/IT traning.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Freelancing'" alt="Freelancing Course" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">IT Consulting</h3>
+            <p class="text-gray-600 text-sm mt-2">Strategic guidance on technology roadmap, cloud adoption, security protocols, and digital transformation initiatives.</p>
+          </article>
+
+
+          <article class="card service-card bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
+            <img src="image/CES.jpg" class="h-44 w-full object-cover rounded-xl mb-4">
+            <h3 class="text-xl font-bold text-blue-800">Computer Hardware Service</h3>
+            <p class="text-gray-600 text-sm mt-2">Expert diagnostics, repair, and maintenance for desktops, laptops, and various computer components.</p>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW COURSES SECTION (Old Services Content) -->
+
+    <section id="courses" class="py-24 initial-hidden bg-blue-50/70">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-4 md:mb-0">Explore Our Advanced Courses</h2>
+          <div class="flex gap-2 items-center">
+            <button class="v1-arrow prev" data-target="courses-row" aria-label="Previous Course">‹</button>
+            <button class="v1-arrow next" data-target="courses-row" aria-label="Next Course">›</button>
+          </div>
+        </div>
+
+        <div id="courses-row" class="cards-row flex gap-6 overflow-x-scroll snap-x snap-mandatory pb-4">
+
+          <!-- Card 1 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="Web Development" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 13 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/web development.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Web+Dev'" alt="Web Development" class="h-44 w-full object-cover rounded-xl mb-4">
+              
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-700 mb-3">Popular</span>
+
+              <h3 class="text-xl font-bold text-blue-800">Web Development</h3>
+              <p class="text-gray-600 mt-2 text-sm">Learn to build modern, responsive websites using HTML, CSS, JavaScript, and popular frameworks.</p>
+              <span class="text-xs font-bold text-red-500 mb-2 uppercase">13 Weeks</span>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600"> BDT 20,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="Software Development" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 26 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/software dev.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Software+Dev'" alt="Software Development" class="h-44 w-full object-cover rounded-xl mb-4">
+
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-200 text-green-600 mb-3">New</span>
+
+              <h3 class="text-xl font-bold text-blue-800">Software Development</h3>
+              <p class="text-gray-600 mt-2 text-sm">A foundation in algorithms, data structures, and the full Software Development Life Cycle (SDLC) using key programming languages.</p>
+              <span class="text-xs font-bold text-green-500 mb-2 uppercase">26 Weeks</span>
+            </div>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 30,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="Digital Marketing" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 17 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/digital marketing.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Digital+Marketing'" alt="Digital Marketing" class="h-44 w-full object-cover rounded-xl mb-4">
+
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-orange-100 text-orange-700 mb-3">Popular</span>
+
+              <h3 class="text-xl font-bold text-blue-800">Digital Marketing</h3>
+              <p class="text-gray-600 mt-2 text-sm">Master SEO, SMM, Content Marketing, and Google Ads to create effective, data-driven online campaigns.</p>
+              <span class="text-xs font-bold text-orange-500 mb-2 uppercase">17 Weeks</span>
+            </div>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 20,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="IT Training" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 17 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/it traning.jfif" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=IT+Training'" alt="IT Training" class="h-44 w-full object-cover rounded-xl mb-4">
+
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-blue-200 text-blue-700 mb-3">Pro</span>
+
+              <h3 class="text-xl font-bold text-blue-800">IT Training</h3>
+              <p class="text-gray-600 mt-2 text-sm">A broad curriculum covering essentials like Cloud, Networking, DevOps, and core IT infrastructure and services.</p>
+              <span class="text-xs font-bold text-blue-500 mb-2 uppercase">17 Weeks</span>
+            </div>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 22,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article
+
+           <!-- Card 5 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="Basic Computer" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 6 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 1.5 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/basic computer.jfif" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Basic+Computer'" alt="Basic Computer" class="h-44 w-full object-cover rounded-xl mb-4">
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-700 mb-3">Starter</span>
+
+              <h3 class="text-xl font-bold text-blue-800">Basic Computer</h3>
+              <p class="text-gray-600 mt-2 text-sm">Learn essential computer fundamentals, MS Office, internet usage, and basic troubleshooting skills.</p>
+              <span class="text-xs font-bold text-pink-500 mb-2 uppercase">6 Weeks</span>
+            </div>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 4,500</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="UI/UX Degine" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 26 Weeks</li>
+              <li><strong>Weekly Class:</strong> 3 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/ui-ux design.jfif" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=UI/UX+Degine'" alt="UI/UX Degine" class="h-44 w-full object-cover rounded-xl mb-4">
+
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-700 mb-3">Popular</span>
+
+              <h3 class="text-xl font-bold text-blue-800">UI/UX Design</h3>
+              <p class="text-gray-600 mt-2 text-sm">Focus on user-centered design, visual hierarchy, wireframing, and prototyping tools like Figma to create intuitive interfaces.</p>
+            </div>
+            <span class="text-xs font-bold text-yellow-500 mb-2 uppercase">26 Weeks</span>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 25,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+          
+          <!-- Card 7 -->
+          <article class="course-card relative bg-white rounded-3xl p-6 shadow-xl border border-gray-100 flex flex-col justify-between" 
+          data-title="Freelancing & Outsourcing" 
+          data-content="
+            <ul class='space-y-2 text-lg text-gray-700'>
+              <li><strong>Duration:</strong> 8 Weeks</li>
+              <li><strong>Weekly Class:</strong> 2 days</li>
+              <li><strong>Class Time:</strong> 2 Hours</li>
+            </ul>
+              ">
+            <div>
+              <img src="image/Frelancing & Outsourcing.JPG" onerror="this.onerror=null;this.src='https://placehold.co/600x400/93c5fd/ffffff?text=Freelancing+&+Outsourcing'" alt="Freelancing & Outsourcing" class="h-44 w-full object-cover rounded-xl mb-4">
+
+              <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-purple-200 text-purple-700 mb-3">Hybrid</span>
+
+              <h3 class="text-xl font-bold text-blue-800">Freelancing & Outsourcing</h3>
+              <p class="text-gray-600 mt-2 text-sm">Learn client acquisition, effective project management, pricing strategies, and navigating popular freelance platforms.</p>
+            </div>
+            <span class="text-xs font-bold text-purple-500 mb-2 uppercase">8 Weeks</span>
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-50">
+              <span class="text-md font-semibold text-blue-600">BDT 15,000</span>
+              <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">More Details →</button>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+ <!-- CONTACT (Full-width, modern grid layout) -->
+
+<section id="contact" class="py-24 initial-hidden bg-white/90">
+  <div class="w-full px-6 md:px-12">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4 md:mb-0">
+        Get In Touch
+      </h2>
+    </div>
+
+    <!-- Contact cards grid (no arrows, full width) -->
+
+    <div id="contact-row" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Contact Card 1 -->
+      <article class="contact-card card bg-white rounded-3xl p-8 shadow-xl border border-gray-100 flex flex-col items-start justify-between"
+        data-title="Call Us Directly"
+        data-content="+8801601919111 — Available 9am–7pm. Talk to a consultant about your project or to enroll for courses.">
+        <h3 class="text-xl font-bold text-blue-800 mb-1">Call</h3>
+        <p class="text-gray-600 text-sm">Reach us for quick support and urgent queries.</p>
+        <div class="mt-6 w-full flex justify-end">
+          <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">Show Number →</button>
+        </div>
+      </article>
+
+      <!-- Contact Card 2 -->
+      <article class="contact-card card bg-white rounded-3xl p-8 shadow-xl border border-gray-100 flex flex-col items-start justify-between"
+        data-title="Email Consultation"
+        data-content="ontechitbd@gmail.com — We reply within 24 hours. Send us project details, budget, and timeline.">
+        <h3 class="text-xl font-bold text-blue-800 mb-1">Email</h3>
+        <p class="text-gray-600 text-sm">Send us detailed project requirements.</p>
+        <div class="mt-6 w-full flex justify-end">
+          <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">Show Email →</button>
+        </div>
+      </article>
+
+      <!-- Contact Card 3 -->
+      <article class="contact-card card bg-white rounded-3xl p-8 shadow-xl border border-gray-100 flex flex-col items-start justify-between"
+        data-title="Visit Our Office"
+        data-content="NP Tower, East Dargah Gate, Sylhet-3100. Office open Mon–Sat (10am–6pm). Schedule an appointment for a personalized consultation.">
+        <h3 class="text-xl font-bold text-blue-800 mb-1">Visit</h3>
+        <p class="text-gray-600 text-sm">Come see us for personalized consultations.</p>
+        <div class="mt-6 w-full flex justify-end">
+          <button class="read-more text-blue-600 font-bold hover:text-blue-700 transition">Show Address →</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="bg-blue-900 text-white py-6 mt-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 OnTech IT • All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- TOP BUTTON -->
+
+  <button id="v1-topBtn" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:bg-blue-700 transition transform hover:-translate-y-1 hidden z-40" aria-label="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- EXPANDED PANEL / MODAL -->
+
+  <div id="v1-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300 z-[60]">
+    <div id="v1-panel" class="max-w-xl mx-auto mt-28 bg-white rounded-3xl shadow-2xl p-8 transform scale-90 opacity-0 transition-all duration-300 ease-out">
+      <button id="v1-close" class="absolute top-5 right-5 text-gray-500 text-2xl hover:text-gray-800 transition">✕</button>
+      <h3 id="v1-panel-title" class="text-3xl font-bold text-blue-900 mb-4"></h3>
+      <p id="v1-panel-content" class="text-lg text-gray-700 leading-relaxed"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

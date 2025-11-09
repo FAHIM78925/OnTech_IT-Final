@@ -1,0 +1,208 @@
+
+
+/* Base container width */
+.container { max-width: 1100px; margin-left: auto; margin-right: auto; }
+
+/* Background blurred gradient texture (modern) */
+:root {
+  --g1: 12 76 155; /* blue */
+  --g2: 99 102 241; /* indigo */
+}
+body.bg-surface {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(var(--g2),0.08), transparent 12%),
+              radial-gradient(900px 400px at 90% 80%, rgba(var(--g1),0.06), transparent 12%),
+              linear-gradient(180deg,#ffffff,#f4f8ff 60%);
+}
+
+/* Navbar shrink */
+#nav.scrolled .nav-inner {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 8px 24px rgba(12,45,80,0.08);
+}
+
+/* Fullscreen mobile menu animation */
+#mobileMenu {
+  z-index: 40;
+}
+#mobileMenu.active {
+  transform: translateY(0);
+}
+
+/* Mobile links */
+.mobile-link {
+  position: relative;
+  transition: color .3s ease;
+}
+.mobile-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width .3s;
+}
+.mobile-link:hover::after {
+  width: 100%;
+}
+
+/* Transition for menu button */
+#menuBtn.active {
+  transform: rotate(90deg);
+  transition: transform .3s;
+}
+
+
+/* Typing cursor */
+.blink { color: rgba(79,70,229,0.9); animation: blink 1s steps(2, start) infinite; }
+@keyframes blink { 50% { opacity: .1; } }
+
+/* Cards hover (Applies to Services, Courses, Contact) */
+.service-card, .contact-card, .card, .course-card {
+  transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s;
+}
+.service-card:hover, .contact-card:hover, .card:hover, .course-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 50px rgba(12,45,80,0.08);
+}
+
+/* Team member default hover */
+.team-member {
+  transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s, border-color .28s, opacity .28s;
+}
+.team-member:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 18px 50px rgba(12,45,80,0.12);
+  border-color: #3b82f6;
+}
+
+/* --- Team Focus/Blur Effect Styles --- */
+
+/* Parent state when a card is selected (blurs all siblings) */
+.cards-row.team-focus .team-member {
+  opacity: 0.4;
+  transform: scale(0.95);
+  box-shadow: none;
+  pointer-events: none; /* Disable interaction with non-focused cards */
+}
+
+/* Specific focused card style */
+.cards-row.team-focus .team-member.active-focus {
+  opacity: 1;
+  transform: scale(1.05); /* Slightly bigger focus */
+  box-shadow: 0 15px 45px rgba(12,45,80,0.2); /* Stronger shadow */
+  border-color: #3b82f6; /* Blue border */
+  z-index: 10; /* Bring forward */
+  pointer-events: auto; /* Re-enable interaction for the active card (to allow click to dismiss) */
+}
+
+/* Ensure blurred cards do not get hover effects */
+.cards-row.team-focus .team-member:not(.active-focus):hover {
+  transform: scale(0.95);
+  box-shadow: none;
+  border-color: #f3f4f6; /* default border */
+}
+
+/* --- End Team Focus/Blur Effect Styles --- */
+
+
+/* Side arrows */
+.v1-arrow {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: .35rem .6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all .2s ease;
+}
+.v1-arrow:hover {  
+  background: #f1f5f9;
+  transform: translateY(-3px); 
+}
+
+/* Grid row for cards */
+.cards-row { scroll-behavior: smooth; }
+
+/* Overlay expanded panel */
+#v1-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#v1-panel.active {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* Large screen arrows positioned over section edges */
+@media (min-width: 768px) {
+  section#services .v1-arrow, section#services .v1-arrow + .v1-arrow {
+    position: relative;
+  }
+}
+
+/* Hide mobile menu by default */
+#v1MobileMenu.hidden { display: none; }
+
+
+/* Card size for horizontal scroll (4 cards visible at a time) */
+.cards-row article {
+  flex-shrink: 0; /* Important: Prevents cards from shrinking */
+  width: calc((100% - 3 * 24px) / 4); /* 4 cards, 3 gaps of 24px */
+}
+
+/* On smaller screens (e.g., small tablets) show 2 cards */
+@media (max-width: 1023px) { /* equivalent to lg: breakpoint in Tailwind */
+  .cards-row article {
+    width: calc((100% - 24px) / 2); /* 2 cards, 1 gap of 24px */
+  }
+}
+
+/* On mobile show 1 card */
+@media (max-width: 639px) { /* equivalent to sm: breakpoint in Tailwind */
+  .cards-row article {
+    width: 100%; /* 1 card, no gap needed */
+  }
+}
+
+/* Hide the scrollbar for a cleaner look */
+.cards-row {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.cards-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Full-width contact section tweaks */
+#contact {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+#contact-row .contact-card {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+#contact-row .contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.1);
+}
+
+
+/* --- Scroll Reveal Animation Classes --- */
+.initial-hidden {
+  opacity: 0;
+  transform: translateY(40px); /* Starts 40px below its final position */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* Optional: Add a slight delay to the transition to make it feel more intentional */
+  transition-delay: 0.1s;
+}
+
+.scroll-reveal {
+  opacity: 1;
+  transform: translateY(0); /* Slides up to its final position */
+}
+
+
